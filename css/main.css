@@ -1,0 +1,26 @@
+a {
+    color: navy;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+}
+
+.bdc-blue{ border-color: blue;}
+.bds-s{ border-style: solid;}
+.bdw-1{ border-width: 1px;}
+
+.m{ margin: 24px;}
+
+.p{ padding: 24px}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+}
