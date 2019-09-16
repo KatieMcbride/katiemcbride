@@ -1,6 +1,6 @@
 /* HEADER */
 .header{
-    background-color: white;
+    background-color: whitesmoke;
     border-bottom-color: black;
     border-bottom-width: 5px;
     border-bottom-style: solid;
@@ -59,3 +59,52 @@ ul {
     justify-content: center;
     padding:24px;
 }
+
+/* PORTFOLIO PAGE */
+body {
+    padding: 40px;
+  }
+  a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+  }
+  .container-1{
+      display:flex;
+      padding:20px;
+      margin:20px;
+      justify-content: center;
+  }
+
+  .container-2{
+      display:flex;
+      padding:20px;
+      margin: 20px;
+      justify-content: center;
+  }
+
+  .container-3{
+      display:flex;
+      padding:20px;
+    
+      justify-content: center;
+  }
+  .image-wrapper {
+    display: inline-block;
+    margin-left: 50px;
+    position: relative;
+  }
+  .image {
+    height: 300px;
+    width: 300px;  
+  }
+  .image-label {
+    background-color: rgb(62, 65, 65);
+    color:  rgb(230, 225, 225);
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
