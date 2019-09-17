@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <title>Contact</title>
 </head>
-<body class="body">
+<body>
+        <!-- header -->
+        <header class="header">
+            <logo>Katie McBride</logo>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+    
+        <!-- Contact Me form -->
+        <div class="contact-form">  
+             <form id="contactme">
+              <h1>Contact Form</h1>
+               <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required>
+              </fieldset> 
+               <fieldset>
+                 <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="3" required></textarea>
+              </fieldset>                  
+              <fieldset>
+                 <button name="submit">Submit</button>
+              </fieldset>
+            </form>
+        </div>
 
-    <!-- header -->
-    <header class="header">
-        <logo>Katie McBride</logo>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!--Body-->
-
-
-    <!--footer-->
-    <footer class="footer">
-        <span>mcbride.katieb@gmail.com</span>
-
-    </footer>
+         <!--footer-->
+        <footer class="footer">
+            <span>mcbride.katieb@gmail.com</span>
+    
+        </footer>
 </body>
 </html>

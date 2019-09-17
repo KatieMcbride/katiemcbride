@@ -54,7 +54,7 @@ ul {
 
 /* FOOTER*/
 .footer{
-    background-color: blueviolet;
+    background-color: rgb(230, 225, 225);
     display: flex;
     justify-content: center;
     padding:24px;
@@ -85,7 +85,6 @@ body {
   .container-3{
       display:flex;
       padding:20px;
-    
       justify-content: center;
   }
   .image-wrapper {
@@ -107,4 +106,44 @@ body {
     text-align: center;
     width: 100%;
   }
+  
+  /* Contact Page */
+  .contact-form {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  #contactme {
+    background: #F9F9F9;
+    padding: 40px;
+    margin: 150px 0;
+    box-shadow: 0 0 10px 0 rgb(230, 225, 225);
+  }
+
+  #contactme h1{
+      display: block;
+      font-size: 30px;
+      margin-bottom: 25px;
+      font-weight: 100;
+  }
+
+  #contactme input{
+      width: 93%;
+      border: 1px solid #ccc;
+      background: white;
+      padding: 10px;
+      margin:10px; 
+  }
+
+  #contactme textarea {
+    width: 93%;
+    border: 1px solid #ccc;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
   
