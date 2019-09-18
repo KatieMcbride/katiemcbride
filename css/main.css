@@ -11,18 +11,41 @@
     font-size: 1.5em;
 
 }
-line-border{
-    border-bottom: 1px solid gray;
+.line-border{
+    font-size: 80px;
+    font-style: italic;
 }
 a {
     color: black;
     text-decoration: none;
     margin-left: 8px;
-
+    
 }
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.inside-type{
+  font-size: 40px;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
+
 ul {
     margin: 0;
 }
+.buttonnav {
+  background-color: whitesmoke ;
+  color: black;
+  text-decoration: none;
+}
+
+.buttonnav:hover {
+    opacity: 0.3;
+}
+
 
 /* BODY */
 .body{
@@ -68,25 +91,14 @@ body {
     color: rgb(12, 12, 12);
     text-decoration: none;
   }
-  .container-1{
+  .portfolio-grid{
       display:flex;
+      flex-wrap: wrap;
       padding:20px;
       margin:20px;
       justify-content: center;
   }
 
-  .container-2{
-      display:flex;
-      padding:20px;
-      margin: 20px;
-      justify-content: center;
-  }
-
-  .container-3{
-      display:flex;
-      padding:20px;
-      justify-content: center;
-  }
   .image-wrapper {
     display: inline-block;
     margin-left: 50px;
@@ -116,34 +128,34 @@ body {
     padding: 20px;
   }
 
-  #contactme {
+  .contactme {
     background: #F9F9F9;
     padding: 40px;
     margin: 150px 0;
     box-shadow: 0 0 10px 0 rgb(230, 225, 225);
   }
 
-  #contactme h1{
+  .contact-form{
       display: block;
       font-size: 30px;
       margin-bottom: 25px;
       font-weight: 100;
   }
 
-  #contactme input{
+  .input{
       width: 93%;
       border: 1px solid #ccc;
       background: white;
       padding: 10px;
       margin:10px; 
+      margin-bottom: 10px;
   }
 
-  #contactme textarea {
+  .messagearea {
     width: 93%;
     border: 1px solid #ccc;
     background: white;
     margin: 10px;
     padding: 10px;
+    margin-top: 10px;
   }
-
-  
