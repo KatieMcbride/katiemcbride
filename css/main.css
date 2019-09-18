@@ -1,22 +1,19 @@
 /* HEADER */
 .header{
-    background-color: whitesmoke;
-    border-bottom-color: black;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    color: black;
+    color: rgb(53, 53, 66);
     display: flex;
     justify-content: space-between;
     padding: 24px;
-    font-size: 1.5em;
+    font-size: 1.25em;
 
 }
 .line-border{
     font-size: 80px;
     font-style: italic;
+    color:rgb(53, 53, 66);
 }
 a {
-    color: black;
+    color:rgb(53, 53, 66);
     text-decoration: none;
     margin-left: 8px;
     
@@ -30,6 +27,9 @@ body{
   font-size: 40px;
   font-style: italic;
   margin-bottom: 100px;
+  color:rgb(53, 53, 66);
+  font-weight: 100;
+  max-width: 960px;
 }
 
 
@@ -37,8 +37,7 @@ ul {
     margin: 0;
 }
 .buttonnav {
-  background-color: whitesmoke ;
-  color: black;
+  color: rgb(53, 53, 66);
   text-decoration: none;
 }
 
@@ -48,6 +47,10 @@ ul {
 
 
 /* BODY */
+
+.background-color{
+  background-color: rgba(253,226,207,0.3)
+}
 .body{
     display: flex;
     flex-direction: column;
@@ -58,7 +61,7 @@ ul {
 
 /* image */
 .portfolio-image{
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: 3%;
     margin-bottom: 1%;
@@ -66,9 +69,15 @@ ul {
     float: left;
 }
 
+.row{
+  background: rgba(253,226,207,0.3);
+    min-width: 960px;
+    padding: 45px 10px 30px 10px;
+}
+
 .section-main{
     display: flex;
-    justify-content:center;
+    justify-content:baseline;
 }
 
 .section-content{
@@ -88,21 +97,23 @@ body {
     padding: 40px;
   }
   a {
-    color: rgb(12, 12, 12);
+    color: rgb(53, 51, 51);
     text-decoration: none;
   }
   .portfolio-grid{
       display:flex;
       flex-wrap: wrap;
       padding:20px;
-      margin:20px;
+      margin:0px;
       justify-content: center;
+      background-color: rgba(253,226,207,0.3);
   }
 
   .image-wrapper {
     display: inline-block;
     margin-left: 50px;
     position: relative;
+    background-color: rgba(253,226,207,0.3);
   }
   .image {
     height: 300px;
@@ -120,6 +131,8 @@ body {
   }
   
   /* Contact Page */
+
+  
   .contact-form {
     max-width: 700px;
     width: 100%;
@@ -127,6 +140,18 @@ body {
     position: relative;
     padding: 20px;
   }
+  .inside-contact{
+    text-align: center;
+    padding: 0;
+    font-size: 40px;
+    font-style: italic;
+    color:rgb(53, 53, 66);
+    font-weight: 100;
+    line-height: .5em;
+
+  
+}
+  
 
   .contactme {
     background: #F9F9F9;
@@ -159,3 +184,16 @@ body {
     padding: 10px;
     margin-top: 10px;
   }
+
+  .row-contact {
+    background: rgba(253,226,207,0.3);
+    min-width: 960px;
+    padding: 0px 0 30px 0;
+  }
+  
+  .image-dream{
+    height: 600px;
+    width: 450px;
+  }
+
+  /* rgba(253,226,207,0.3) */
