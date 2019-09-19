@@ -1,41 +1,16 @@
-/* HEADER */
-.header{
-    color: rgb(53, 53, 66);
-    display: flex;
-    justify-content: space-between;
-    padding: 24px;
-    font-size: 1.25em;
-
-}
-.line-border{
-    font-size: 80px;
-    font-style: italic;
-    color:rgb(53, 53, 66);
-}
+/* Generic */
 a {
-    color:rgb(53, 53, 66);
-    text-decoration: none;
-    margin-left: 8px;
-    
+  color:rgb(53, 53, 66);
+  margin-left: 8px; 
+  text-decoration: none;
 }
 
 body{
   font-family: 'Lato', sans-serif;
+  padding: 40px;
 }
 
-.inside-type{
-  font-size: 40px;
-  font-style: italic;
-  margin-bottom: 100px;
-  color:rgb(53, 53, 66);
-  font-weight: 100;
-  max-width: 960px;
-}
-
-
-ul {
-    margin: 0;
-}
+/* HEADER */
 .buttonnav {
   color: rgb(53, 53, 66);
   text-decoration: none;
@@ -45,155 +20,156 @@ ul {
     opacity: 0.3;
 }
 
-
-/* BODY */
-
-.background-color{
-  background-color: rgba(253,226,207,0.3)
-}
-.body{
+.header{
+    color: rgb(53, 53, 66);
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    font-size: 1.25em;
+    justify-content: space-between;
     padding: 24px;
-    margin: 24px;
 }
 
-/* image */
-.portfolio-image{
-    display: flex;
-    margin-left: auto;
-    margin-right: 3%;
-    margin-bottom: 1%;
-    width: 50%;
-    float: left;
+/* SUBHEADER */
+.inside-type{
+  color:rgb(53, 53, 66);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 80px;
+  max-width: 960px;
 }
 
-.row{
+.subheader-main{
+  display: flex;
+  justify-content:baseline;
+}
+
+.subheader-content{
+  max-width: 960px;
+}
+
+.top-greeting{
+  color:rgb(53, 53, 66);
+  font-size: 80px;
+  font-style: italic;
+}
+
+/* INDEX BODY */
+.block-area{
   background: rgba(253,226,207,0.3);
-    min-width: 960px;
-    padding: 45px 10px 30px 10px;
+  min-width: 960px;
+  padding: 45px 10px 30px 10px;
 }
 
-.section-main{
-    display: flex;
-    justify-content:baseline;
+.body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+  margin: 24px;
 }
 
-.section-content{
-    max-width: 960px;
+.info-header{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.inside-personal{
+  color:rgb(53, 53, 66);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: .5em;
+  text-align: center;
+  padding: 0;
+}
+
+.inside-subheading{
+  color: rgb(53, 53, 66);
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.index-image{
+  display: flex;
+  margin-left: auto;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  width: 50%;
+  float: left;
+}
+
+/* PORTFOLIO PAGE */
+.image {
+  height: 300px;
+  width: 300px;  
+}
+
+.image-label {
+  background-color: rgb(62, 65, 65);
+  bottom: 20px;
+  color:  rgb(230, 225, 225);
+  font-size: 30px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.image-wrapper {
+  background-color: rgba(253,226,207,0.3);
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+}
+
+.portfolio-grid{
+  background-color: rgba(253,226,207,0.3);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0px;
+  padding:20px;
+}
+  
+/* Contact Page */
+.inside-contact{
+  color:rgb(53, 53, 66);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: .5em;
+  text-align: center;
+  padding: 0;
+}
+
+.row-contact {
+  background: rgba(253,226,207,0.3);
+  min-width: 960px;
+  padding: 0px 0 30px 0;
+}
+
+.small-contact{
+  color:rgb(53, 53, 66);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: .5em;
+  text-align: center;
+  padding: 0;
+}
+
+/* Living the dream Page */
+.image-dream{
+  height: 600px;
+  width: 450px;
 }
 
 /* FOOTER*/
 .footer{
-    background-color: rgb(230, 225, 225);
-    display: flex;
-    justify-content: center;
-    padding:24px;
+  background-color: rgb(230, 225, 225);
+  display: flex;
+  justify-content: center;
+  padding:24px;
 }
-
-/* PORTFOLIO PAGE */
-body {
-    padding: 40px;
-  }
-  a {
-    color: rgb(53, 51, 51);
-    text-decoration: none;
-  }
-  .portfolio-grid{
-      display:flex;
-      flex-wrap: wrap;
-      padding:20px;
-      margin:0px;
-      justify-content: center;
-      background-color: rgba(253,226,207,0.3);
-  }
-
-  .image-wrapper {
-    display: inline-block;
-    margin-left: 50px;
-    position: relative;
-    background-color: rgba(253,226,207,0.3);
-  }
-  .image {
-    height: 300px;
-    width: 300px;  
-  }
-  .image-label {
-    background-color: rgb(62, 65, 65);
-    color:  rgb(230, 225, 225);
-    font-size: 30px;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  /* Contact Page */
-
-  
-  .contact-form {
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    padding: 20px;
-  }
-  .inside-contact{
-    text-align: center;
-    padding: 0;
-    font-size: 40px;
-    font-style: italic;
-    color:rgb(53, 53, 66);
-    font-weight: 100;
-    line-height: .5em;
-
-  
-}
-  
-
-  .contactme {
-    background: #F9F9F9;
-    padding: 40px;
-    margin: 150px 0;
-    box-shadow: 0 0 10px 0 rgb(230, 225, 225);
-  }
-
-  .contact-form{
-      display: block;
-      font-size: 30px;
-      margin-bottom: 25px;
-      font-weight: 100;
-  }
-
-  .input{
-      width: 93%;
-      border: 1px solid #ccc;
-      background: white;
-      padding: 10px;
-      margin:10px; 
-      margin-bottom: 10px;
-  }
-
-  .messagearea {
-    width: 93%;
-    border: 1px solid #ccc;
-    background: white;
-    margin: 10px;
-    padding: 10px;
-    margin-top: 10px;
-  }
-
-  .row-contact {
-    background: rgba(253,226,207,0.3);
-    min-width: 960px;
-    padding: 0px 0 30px 0;
-  }
-  
-  .image-dream{
-    height: 600px;
-    width: 450px;
-  }
-
-  /* rgba(253,226,207,0.3) */
