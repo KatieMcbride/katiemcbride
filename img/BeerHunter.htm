@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://beerhunter.pub/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./BeerHunter_files/bootstrap.min.css">
+    <link rel="stylesheet" text="text/css" href="./BeerHunter_files/style.css">
+    <link href="./BeerHunter_files/css" rel="stylesheet">
+    <link rel="icon" type="img/ico" href="https://beerhunter.pub/favicon.ico">
+    <script src="./BeerHunter_files/0270abbd8e.js" crossorigin="anonymous"></script><link rel="stylesheet" href="./BeerHunter_files/free.min.css" media="all"><link rel="stylesheet" href="./BeerHunter_files/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="./BeerHunter_files/free-v4-shims.min.css" media="all">
+    <script src="./BeerHunter_files/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./BeerHunter_files/js"></script>
+    <title>BeerHunter</title>
+<script type="text/javascript" charset="UTF-8" src="./BeerHunter_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./BeerHunter_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./BeerHunter_files/geocoder.js"></script></head>
+
+<body>
+
+    <div class="bg-color container-fluid">
+        <!-- landing page-logo -->
+        <div class="container-header d-flex align-self-start">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="logo">BeerHunter</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--landing page-blurb-->
+    <div class="bg-text-1">
+        <p class="intro-text">Looking for a place to drink?</p>
+        <p class="intro-text-1">Find a brewery<br> or plan a pub crawl.</p>
+    </div>
+
+    <!--landing page-call to action-->
+    <div class="bg-text">
+        <p class="p-text tracking-in-expand">Let's Drink.</p>
+        <button id="startBtn" class="btn btn-lg btn-warning">Get Started</button>
+    </div>
+
+    <!--landing page-Beer Animation -->
+    <div class="beerContainer">
+        <div class="shadow"></div>
+        <div class="mug-of-beer">
+            <div class="handle"></div>
+            <div class="mug-body"></div>
+
+            <div class="bubbles">
+                <div class="bubble beer-bubble"></div>
+                <div class="bubble beer-bubble"></div>
+                <div class="bubble beer-bubble"></div>
+                <div class="bubble beer-bubble"></div>
+                <div class="bubble beer-bubble"></div>
+
+                <div class="bubble froth-bubble"></div>
+                <div class="bubble froth-bubble"></div>
+                <div class="bubble froth-bubble"></div>
+            </div>
+
+            <div class="froth">
+                <div class="froth-part froth-circle-part"></div>
+                <div class="froth-part froth-circle-part"></div>
+                <div class="froth-part froth-circle-part"></div>
+                <div class="froth-part froth-circle-part"></div>
+                <div class="froth-part froth-circle-part"></div>
+                <div class="froth-part froth-circle-part"></div>
+                <div class="froth-part froth-circle-part"></div>
+
+                <div class="froth-part froth-elongated-part"></div>
+                <div class="froth-part froth-elongated-part"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--section-what's beerhunter cards-->
+    <div class="container">
+        <!-- row one -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="intro">What's BeerHunter?</div>
+            </div>
+        </div>
+
+        <!-- row two -->
+        <div class="row d-flex justify-content-between">
+
+            <!--card one-->
+            <div class="col-md-3 card">
+                <i class="fas fa-beer fa-3x iconStyle" aria-hidden="true"></i>
+                <div class="container">
+                    <h4><b>Find a Brewery</b></h4>
+                    <p>Search your local area for the nearest brew pub or find the new brewery that has created a lot of buzz.</p>
+                </div>
+            </div>
+
+            <!--card two-->
+            <div class="col-md-3 card">
+                <i class="fas fa-calendar fa-3x iconStyle" aria-hidden="true"></i>
+                <div class="container">
+                    <h4><b>Plan the ultimate pub crawl</b></h4>
+                    <p>Map out your night to find all the breweries in one area.</p>
+
+                </div>
+            </div>
+
+            <!--card three-->
+            <div class="col-md-3 card">
+                <i class="fas fa-map-marked fa-3x iconStyle" aria-hidden="true"></i>
+                <div class="container">
+                    <h4><b>Plan a trip</b></h4>
+                    <p>Tour a brewery while on vacation. Or plan your vacation around your brewrey tours. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- section-bottoms up-Search Box div -->
+    <div class="container-fluid searchBox secondary-bg-color">
+
+        <div>
+            <p class="intro">Bottoms Up.</p>
+            <p class="sub-heading">Looking for something specific?<br> Be sure to check the boxes to make your night
+                perfect.</p>
+        </div>
+
+        <!-- Icon -->
+       <div>
+        <i class="fas fa-glass-cheers fa-3x icon" aria-hidden="true"></i>
+       </div>
+        <br>
+
+        <!--form wrapper-->
+        <form id="target">
+            <!-- text input -->
+            <div>
+                <input class="inputHolder" id="cityInput" type="text" placeholder="City">
+                <input class="inputHolder" id="stateInput" type="text" placeholder="State">
+                <input type="submit" style="display: none">
+            </div>
+
+            <!-- search parameter checkboxes -->
+            <div class="checkbox">
+                <input id="patio" class="tag" type="checkbox">Patio
+                <input id="dog" class="tag" type="checkbox">Dog-Friendly
+                <input id="food" class="tag" type="checkbox">Food-Service
+                <input id="tours" class="tag" type="checkbox">Tours
+            </div>
+
+            <!-- submit button -->
+            <button class="btn btn-lg btn-secondary" id="searchBtn" type="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <!--section-map and brewery search result list-->
+    <div class="hide" id="mapContainer">
+        <div class="third-bg-c container-fluid">
+            <p>Click on a brewery and map out your night.</p>
+        </div>
+
+        <div class="container-wrapper">
+            <div class="row d-flex justify-content-center">
+​
+                <!-- left side - results -->
+                <div class="col-md-6">
+                    <div class="container-left" id="resultBrew"></div>
+                </div>
+​
+                <!-- right side - map -->
+                <div class="col-md-6">
+                    <div class="container-right">
+                        <div id="map" style="height: 600px; width: 600px;"></div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div> 
+
+
+    <!-- footer -->
+    <footer></footer>
+
+    <script src="./BeerHunter_files/bootstrap.bundle.min.js"></script>
+    <script src="./BeerHunter_files/app.js"></script>
+
+
+
+
+</body></html>

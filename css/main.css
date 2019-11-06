@@ -50,8 +50,15 @@ body{
   justify-content:baseline;
 }
 
+.subheader-main-designs{
+  display: flex;
+  justify-content:baseline;
+  text-align: center;
+}
+
 .subheader-content{
   max-width: 960px;
+
 }
 
 .top-greeting{
@@ -149,7 +156,7 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding:20px;
+  padding:10px;
 }
 
 /* PORTFOLIO PAGE */
@@ -181,7 +188,7 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding:20px;
+  padding:10px;
 }
   
 /* Contact Page */
@@ -241,7 +248,7 @@ body{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 400px;
+  width: 350px;
   height: 400px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
