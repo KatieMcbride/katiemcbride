@@ -1,7 +1,6 @@
 /* Generic */
 a {
   color:rgb(53, 53, 66);
-  margin-left: 8px; 
   text-decoration: none;
 }
 
@@ -20,6 +19,7 @@ body{
   color: rgb(53, 53, 66);
   text-decoration: none;
   letter-spacing: 2px;
+  margin-left: 8px; 
 }
 
 .buttonnav:hover {
