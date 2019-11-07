@@ -288,4 +288,10 @@ body{
   background-color: rgb(197, 87, 87);
   color: white;
   transform: rotateY(180deg);
+  font-family:'Lato', sans-serif;
+}
+
+.card-text{
+  margin-top: 50px;
+  font-size: 40px;
 }
