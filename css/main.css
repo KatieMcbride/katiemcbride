@@ -292,6 +292,23 @@ body{
 }
 
 .card-text{
-  margin-top: 50px;
   font-size: 40px;
+  color: rgb(53, 53, 66);
+}
+
+.project-cards{
+  border: black solid 1px;
+  width: 85%;
+  padding: 10px;
+  background-color: white;
+}
+
+.beer-icon{
+  color: gold;
+  
+}
+
+.main-project-text{
+  text-align: center;
+  margin-top: 40px;
 }
