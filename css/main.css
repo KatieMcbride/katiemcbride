@@ -275,16 +275,12 @@ body{
   border: black solid 1px;
   width: 85%;
   padding: 10px;
-  background-color: rgba(253,226,207,0.3);
+  background-color: white;
   margin-bottom: 20px;
   transition: .5s ease;
   backface-visibility: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-}
-
-.beer-icon{
-  color: gold;
-  
 }
 
 .main-project-text{
@@ -330,5 +326,32 @@ body{
 }
 
 .descriptive-header{
-  color: red;
+  color: rgb(219, 70, 70);
+  text-align: left;
+}
+
+.button1 {
+  background-color: rgb(67, 67, 82); /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: fixed;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.button1:hover {
+  background-color: rgb(53, 53, 66);
+  color: white;
+}
+
+.link{
+  color: white;
 }
