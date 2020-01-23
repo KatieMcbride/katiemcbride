@@ -88,10 +88,18 @@ body{
 
 .info-header{
   color: rgb(53, 53, 66);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: 400;
   text-align: center;
+}
+
+.info-header-2{
+  color: rgb(53, 53, 66);
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
 }
 
 .info-header-sub{
@@ -100,6 +108,14 @@ body{
   font-style: italic;
   font-weight: 300;
   text-align: center;
+}
+
+.info-header-sub-2{
+  color: rgb(53, 53, 66);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: left;
 }
 
 .inside-personal{
@@ -153,10 +169,7 @@ body{
 
 .portfolio-grid{
   background-color: rgba(253,226,207,0.3);
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding:10px;
+ 
 }
 
 /* PORTFOLIO PAGE */
@@ -296,11 +309,20 @@ body{
   color: rgb(53, 53, 66);
 }
 
+.big-project-cards{
+  width: 100%;
+  
+}
+
 .project-cards{
   border: black solid 1px;
   width: 85%;
   padding: 10px;
   background-color: white;
+  margin-bottom: 20px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
 }
 
 .beer-icon{
@@ -311,4 +333,41 @@ body{
 .main-project-text{
   text-align: center;
   margin-top: 40px;
+  font-size: 40px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  color:rgb(53, 53, 66);
+  letter-spacing: 2px;
+}
+
+.descriptive{
+  text-align: right;
+  color: red;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  /* top: 80%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-cards:hover .main-project-text {
+  opacity: 0.3;
+}
+
+.project-cards:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgb(175, 79, 76);
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
 }
