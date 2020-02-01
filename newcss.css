@@ -36,7 +36,7 @@ nav p:nth-child(1) {
     text-align: left;
 }
 
-nav p:nth-child(4) {
+nav p:nth-child(2) {
     text-align: right;
 }
 
@@ -219,12 +219,43 @@ li {
 }
 
 .projects{
-    background-color: black;
+    background-color: rgb(49, 47, 47);
 }
 
 h2{
-    font-size: 200px;
+    font-size: 150px;
     color: white;
+    font-family: 'GTWalsheim', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+.card{
+    border: white solid 1px;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    display: inline-grid;
+    justify-content: center;
+}
+
+.button1 {
+    background-color: rgb(196, 192, 192); /* Green */
+    border: darkgray 1px solid;
+    color: rgb(233, 25, 25);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'GTWalsheim', sans-serif;
+    letter-spacing: 0.6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
 }
 
 /* SCROLLING */
@@ -232,7 +263,8 @@ h2{
     height: 300px; 
     overflow: hidden;
     position: relative;
-    }
+}
+
     .scroll-left p {
     position: absolute;
     font-family: 'GTWalsheim', sans-serif;
@@ -271,4 +303,97 @@ h2{
     -webkit-transform: translateX(-100%); /* Browser bug fix */
     transform: translateX(-100%); 
     }
+}
+
+
+/* OVERLAY */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;s
+  left: 0;
+  background-color: #2023ec;
+  background-color: #3420ecf8;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay p {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay p:hover, .overlay a:focus {
+  color: #b4afaf;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* SLIDER */
+
+.slider {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; 
+  }
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+    color: red;
+  }
+
+  .slides > div {
+    /* CURRENT way. */
+    scroll-snap-align: start;
+  }
+.slide-wrap{
+    color: white;
+}
+
+.slide-wrap a{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.slides{
+    scroll-behavior: smooth;
+}
+
+@supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
     }
+  }
