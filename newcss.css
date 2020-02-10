@@ -52,6 +52,7 @@ nav p:nth-child(2) {
     font-size: 60px;
     letter-spacing: 1px;
     text-align: left;
+    color: #fea49f;
 }
 
 .aboutMeI{
@@ -233,7 +234,7 @@ li {
 }
 
 .projects{
-    background-color: rgb(49, 47, 47);
+    background-color: #fea49f;
 }
 
 h2{
@@ -332,8 +333,8 @@ h2{
   z-index: 4;
   top: 0;s
   left: 0;
-  background-color: #2023ec;
-  background-color: #3420ecf8;
+  background-color: #fff5d7;
+  background-color: #101357;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -401,7 +402,7 @@ h2{
 }
 
 .slide-wrap a{
-    color: white;
+    /* color: white; */
     font-size: 20px;
     text-align: center;
 }
@@ -443,13 +444,13 @@ h2{
 }
 
 .card {
-  font-family: 'Heebo';
-  --bg-filter-opacity: 0.5;
+    font-family: 'GTWalsheim', sans-serif;
+  /* --bg-filter-opacity: 0.5; */
   background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
   height: 20em;
   width: 15em;
   font-size: 1.5em;
-  color: white;
+  color: black;
   border-radius: 1em;
   padding: 1em;
   /*margin: 2em;*/
@@ -488,7 +489,7 @@ h2{
 
 .card .tags .tag {
   font-size: 0.75em;
-  background: rgba(255,255,255,0.5);
+  background: rgba(71, 64, 64, 0.5);
   border-radius: 0.3rem;
   padding: 0 0.5em;
   margin-right: 0.5em;
@@ -531,7 +532,7 @@ h2{
 }
 
 .card:after {
-  background: white;
+  background: #007f4f;
   width: 200%;
   height: 200%;
 }
