@@ -5,115 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Katie McBride Personal Website</title>
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script src="https://kit.fontawesome.com/0270abbd8e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+    <!-- <link rel="stylesheet" type="text/css" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" type="text/css" href="newcss.css"/>
 </head>
 
-<body class="body">
-    <!-- header -->
-    <header class="header">
-        <logo>Katie McBride</logo>
-        <nav>
-            <a href="./index.html" class="buttonnav">Home</a>
-            <a href="./portfolio.html" class="buttonnav" >Projects</a>
-            <a href="./contact.html" class="buttonnav">Contact</a>
-        </nav>
+<body>
+  <!-- header -->
+    <nav>
+       <p>Katie McBride</p>
+       <span style="cursor:pointer" class="nav-link" onclick="openNav()">About Me</span>
+    </nav>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <h1 class="aboutMe">ABOUT ME</h1>
+          <p class="aboutMeI">Creative Web Developer with a natural aptitude for programming, design, and computational thinking. Graduate from Northwestern University’s full-stack Web Development Bootcamp. Worked with front end UX design as well as back end development and database storage. </p>
+        </div>
+      </div>
+
+    <p class="portfolio">MY PORTFOLIO AS A</p>
+
+    <header>
+        <h1>WEB</h1>
+        <h1>DEVELOPER</h1>
+        <div class="big-images" style="margin-top: -75.5px;">
+            <img src="./img/IMG_4673.jpeg" style="transform: translate3d(0px, -30.6192px, 0px)">
+
+        </div>
     </header>
 
-    <!--Subheader-->
-    <section class="subheader-main">
-        <div class="subheader-content">
-            <h1 class="top-greeting">Hey there.</h1>
-            <p class="inside-type"> Welcome, glad to have you here. My name is Katie and I am a full-stack web developer based in Chicago.</p>
-        </div> 
-    </section>
-    
-    <!-- Body -->
-    <section class="block-area">
-        <img src="./img/KMcBride-km557-20170118-2 (2).jpg" class="index-image" />
-        <p class="info-header">About</p>
-        <p class="info-header-sub">Budding developer with a natural aptitude for programming, design, and computational thinking. Proven leader and effective communicator across industries, cultures, and languages.</p>
-        <p class="info-header-sub">Outside of work I have a wonderful husband and a beautiful daughter. We love living in the city and exploring different neighborhoods.</p>
-    </section>
-
-    <section class="block-area">
-            <p class="info-header-2">School</p>
-            <p class="info-header-sub-2">I am currently a student at Northwestern University's Web Development Bootcamp.Upon graduation I will be knowledgable in:</p>
-            <p class="info-header-sub-2">HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL, Command Line, Git, Java</p>
-    </section>
-
-    <section class="block-area">
-            <p class="info-header-2">Skills</p>
-            <p class="info-header-sub-2">In addition to the coding languages above I am resilient, a hard-worker, and ambitious.  I love the challenge and growth that comes every day while creating websites.</p>
-            <p class="info-header-sub-2">On your team I will work hard and be dependable. I take a lot of pride in my work and am eager to learn. </p>
-    </section>
-
-    <div class="style-lines">
-        <hr size="3" color="black" width=100%>
-        <hr size="3" color="black" width=100%>
-        <hr size="3" color="black" width=100%>
-    </div>
-
-    <!-- Subheader -->
-    <section class="subheader-main">
-        <div class="subheader-content">
-            <h1 class="inside-type">I'd love to get lunch or coffee and get to know you, so don’t hesitate to get in touch.<a href="mailto:mcbride.katieb@gmail.com? subject=Let's Chat">  Email me.</a></h1>
-        </div>    
-    </section>
-
-   
-
-    
-        <!-- <p class="inside-type">Don't see much? Well, this is just the beginning. The best is yet to come.</p> -->
-
-    
-
-
-    <!--footer-->
-    <footer class="footer">
-        <span>Katie McBride Portfolio</span>
-
-    </footer>
-</body>
-</html>
-
-
-
-
-
-
-       <div class="scroll-left">
-        <p>ABOUT ME</p>
-        </div>
-
-        <section>
-        <div class="info">
-        <div class="info-left">
-            <ul>
-                <li>School</li>
-                <li>Northwestern University</li>
-                <li>Web Developement Bootcamp</li> 
-                <li>BYU</li>
-            </ul>
-        </div>
-
-        <div class="info-right">
-            <ul>
-                 <li>Front-end</li>
-                 <li>HTML</li>
-                 <li>CSS</li>
-                 <li>JavaScript</li>
-                 <li>JQuery</li>
-            </ul>
-        </div>
-        <div class="info-left">
-            <ul>
-                 <li>Back-end</li>
-                 <li>React.js</li>
-                 <li>MongoDB</li>
-                 <li>Node.js</li>
-                 <li>SQL</li>
-            </ul>
-        </div>
-        </div>
+    <main>
+        <section class="intro">
+            <p>Hey there. Welcome, glad to have you here. My name is Katie and I am a full-stack web developer based in Chicago.</p>
         </section>
+    
+
+    <section class="projects">
+        <h2>Recent Projects</h2>
+        <div class="slide-wrap">
+  
+            <a href="#slide-1" class="numbers">1</a>
+            <a href="#slide-2" class="numbers">2</a>
+            <a href="#slide-3" class="numbers">3</a>
+            <a href="#slide-4" class="numbers">4</a>
+        
+            <!-- <a href="#slide-5">5</a> -->
+
+            <div class="slider">
+                <div class="slide" id="slide-1"> 
+                    <section class="cards-wrapper">
+                        <div class="card-grid-space">
+                            <div class="num">01</div>
+                                <a class="card" href="https://fitboardathletic.herokuapp.com/" >
+                                    <div>
+                                      <img src="img/FitBoard.png" style="height: 200px; width: 200px;">
+                                      <h1>FitBOARD</h1>
+                                      <p>Compete against your friends with this social media style Fitness Tracker</p>
+                                      <div class="date">Jan 2020</div>
+                                      <div class="tags">
+                                      <div class="tag">SQL</div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="slide" id="slide-2">
+                     <section class="cards-wrapper">
+                        <div class="card-grid-space">
+                            <div class="num">02</div>
+                                <a class="card" href="https://beerhunter.pub/">
+                                    <div>
+                                      <img src="img/Beer Hunter.png" style="height: 200px; width: 200px;">
+                                      <h1>BeerHunter</h1>
+                                      <p>Find a brewery, plan out your beer crawl, map it out.</p>
+                                      <div class="date">Nov 2019</div>
+                                      <div class="tags">
+                                      <div class="tag">API</div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="slide" id="slide-3">
+                      <section class="cards-wrapper">
+                        <div class="card-grid-space">
+                            <div class="num">03</div>
+                                <a class="card" href="https://katiemcbride.github.io/work-day-scheduler/">
+                                    <div>
+                                      <img src="img/Work Schedule.png" style="height: 200px; width: 200px;">
+                                      <h1>Work Scheduler</h1>
+                                      <p>Plan your day by the hour and save your to-dos.</p>
+                                      <div class="date">Oct 2019</div>
+                                      <div class="tags">
+                                      <div class="tag">Local Storage</div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="slide" id="slide-4">
+                     <section class="cards-wrapper">
+                        <div class="card-grid-space">
+                            <div class="num">04</div>
+                                <a class="card" href="https://katiemcbride.github.io/HW2/">
+                                    <div>
+                                      <img src="img/Chicago food guide.png" style="height: 200px; width: 200px;">
+                                      <h1>Chicago Food Guide</h1>
+                                      <p>List of top Chicago Restaraunts</p>
+                                      <div class="date">Sep 2019</div>
+                                      <div class="tags">
+                                      <div class="tag">Bootstrap</div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </section>
+                    
+                </div>
+                <!-- <div class="slide" id="slide-5">
+                        <section class="cards-wrapper">
+                                <div class="card-grid-space">
+                                  <div class="num">05</div>
+                                  <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+                                    <div>
+                                      <h1>HTML Syntax</h1>
+                                      <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
+                                      <div class="date">6 Oct 2017</div>
+                                      <div class="tags">
+                                        <div class="tag">HTML</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                        </section>
+                </div> -->
+            </div>
+        </div>
+    </div>   
+       
+    </section>
+
+    <section>
+      <div class="holder"></div>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <h1>
+      <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "Find me on the internet.", "Say hi.", "Stalk my work.", "Drop me an email." ]'></span>
+    </h1>
+    <div class="contact">
+      <p class= "nav-link contact"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/katiebmcbride/">  LinkedIn</a></p>
+      <p class="nav-link contact"><i class="fab fa-github"></i><a href="https://github.com/KatieMcbride">  Github</a></p>
+      <p class="nav-link contact"><i class="fas fa-mail-bulk"></i><a href="mailto:mcbride.katieb@gmail.com? subject=Let's Chat">  mcbride.katieb@gmail.com</a></p>
+    
+    </div>
+    </section>
+    </main>    
+
+
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
+</body>
+
+<footer>
+  Katie McBride 2020
+</footer>

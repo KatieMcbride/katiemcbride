@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Katie McBride Personal Website</title>
     <script src="https://kit.fontawesome.com/0270abbd8e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
     <!-- <link rel="stylesheet" type="text/css" href="./css/normalize.css" /> -->
     <link rel="stylesheet" type="text/css" href="newcss.css"/>
 </head>
@@ -14,7 +16,7 @@
   <!-- header -->
     <nav>
        <p>Katie McBride</p>
-       <span style="cursor:pointer" class="nav-link contact" onclick="openNav()">About Me</span>
+       <span style="cursor:pointer" class="nav-link" onclick="openNav()">About Me</span>
     </nav>
 
     <div id="myNav" class="overlay">
@@ -46,10 +48,11 @@
         <h2>Recent Projects</h2>
         <div class="slide-wrap">
   
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
+            <a href="#slide-1" class="numbers">1</a>
+            <a href="#slide-2" class="numbers">2</a>
+            <a href="#slide-3" class="numbers">3</a>
+            <a href="#slide-4" class="numbers">4</a>
+        
             <!-- <a href="#slide-5">5</a> -->
 
             <div class="slider">
@@ -150,10 +153,21 @@
     </section>
 
     <section>
-        <h3>FIND ME ON THE INTERNET</h3>
-        <p class= "nav-link contact"><a href="https://www.linkedin.com/in/katiebmcbride/">LinkedIn</a></p>
-       <p class="nav-link contact"><a href="https://github.com/KatieMcbride">Github</a></p>
-       <p class="nav-link contact"><a href="mailto:mcbride.katieb@gmail.com? subject=Let's Chat">Contact me</a></p>
+      <div class="holder"></div>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <h1>
+      <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "Find me on the internet.", "Say hi.", "Stalk my work.", "Drop me an email." ]'></span>
+    </h1>
+    <div class="contact">
+      <p class= "nav-link contact"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/katiebmcbride/">  LinkedIn</a></p>
+      <p class="nav-link contact"><i class="fab fa-github"></i><a href="https://github.com/KatieMcbride">  Github</a></p>
+      <p class="nav-link contact"><i class="fas fa-mail-bulk"></i><a href="mailto:mcbride.katieb@gmail.com? subject=Let's Chat">  mcbride.katieb@gmail.com</a></p>
+    
+    </div>
     </section>
     </main>    
 
@@ -171,3 +185,6 @@
 
 </body>
 
+<footer>
+  Katie McBride 2020
+</footer>
