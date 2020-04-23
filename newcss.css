@@ -372,6 +372,7 @@ h3{
   }
 .slide-wrap{
     color: white;
+    margin-left: 10px;
 }
 
 .slide-wrap a{
@@ -389,6 +390,12 @@ h3{
       display: none;
     }
   }
+
+.scroll{
+  font-size: 20px;
+  color: #fea49f;
+  margin-left: 10px;
+}
 
 
 /* CARD */
