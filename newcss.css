@@ -105,14 +105,13 @@ header h1 {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     z-index: 1;
 }
 
 .big-images img {
-    width: 45vw;
-    /* height: 30vw; */
-    /* align-self: center; */
+    width: 50vw;
+    align-self: center;
     z-index: 0;
 }
 
